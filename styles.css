@@ -4,19 +4,20 @@
 }
 :root{
   --main-bg-color: #f2f2f2;
-  --main-txt-color: #ff4447;
+  /* --main-txt-color: #ff4447; */
+  --main-txt-color: #da816b;
+  /* --main-txt-color: #e7a18f; */
   --txt-color: #41949a;
 }
 body{
   width: 100vp;
   height: 100vh;
   position: relative;
-  overflow-x: hidden;
-  font-family: '[Radio Grotesk]', Arial, Helvetica, sans-serif;
-  background-image: url(images/bgfilter.png);
+  overflow: hidden;
+  font-family: 'Radio Grotesk', Arial, Helvetica, sans-serif;
+  background-image: url(images/SVG/bg.svg);
   background-size: cover;
-  background-blend-mode: overlay;
-  background-color: var(--main-bg-color);
+  background-blend-mode: difference;
 }
 
 /* ---------STATIC ITEMS---------- */
@@ -26,17 +27,11 @@ h1{
   font-weight: 200;
   line-height: 1.1;
 }
+/* h2{
+  font-size: 2.2em;
+} */
 p{
   color: var(--main-txt-color);
-  font-size: 14px;
-}
-#colophone{
-  position: absolute;
-  top: 1%;
-  left: 1%;
-}
-#colophone p{
-  font-size: 12px;
 }
 #title{
   position: absolute;
@@ -44,27 +39,39 @@ p{
   right: 1%;
   text-align: right;
 }
+#colophone{
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
+#colophone p{
+  color: var(--main-txt-color);
+  font-size: 13px;
+}
 #source{
   position: absolute;
-  bottom: 1%;
-  right: 1%;
+  bottom: 3%;
+  right: 2%;
   display: flex;
-}
-#study-portal{
-  writing-mode: vertical-rl;
+  /* writing-mode: vertical-lr; */
   text-orientation: mixed;
-  margin-top: 1%;
+  margin-top: 0%;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
-#source-txt{
-  position: absolute;
-  top: -1em;
-  left: 3.5%;
+a {
+  color: var(--main-txt-color);
 }
 #paragraph{
   position: absolute;
   bottom: 1%;
-  right: 10%;
-  width: 17%;
+  right: 3%;
+  width: 16%;
+  text-align: right;
+}
+#paragraph p{
+  color: var(--main-txt-color);
+  font-size: 95.5%;
 }
 
 /* --------QUESTION--------- */
@@ -77,10 +84,22 @@ aside{
 }
 button{
   border-style: none;
-  background-color:#f2f2f2;
+  background-color:#f2f2f200;
   color: var(--main-txt-color);
   text-align: left;
   width: 100%;
+}
+button:hover{
+  opacity: 70%;
+}
+button:focus {
+  outline:0;
+  border: none;
+  color: #c96a52;
+  font-size: 100%;
+}
+button .active{
+  border: none;
 }
 .question{
   display: flex;
@@ -91,13 +110,218 @@ button h2{
   font-weight: 400;
   display: inline-block;
   margin-right: 3%;
-  margin-top: 3%;
-  background-color: var(--main-bg-color);
 }
 h3{
   display: inline-block;
   font-size: 150%;
   font-weight: 540;
   width: 50%;
-  margin-top: 6.5%;
+  margin-top: 2%;
+}
+/* --------GRAPHS----------- */
+main{
+  position: absolute;
+  top: 3%;
+  left: 14%;
+  width: 70%;
+  height: 60%;
+}
+/* -----GRAPH 1------- */
+#graph1{
+  margin-top: 10%;
+  margin-left: 0%;
+}
+.subtitles{
+  display: flex;
+  justify-content: space-between;
+}
+.subtitles h2{
+  display: inline-block;
+  transform: rotate(-45deg);
+  color: var(--main-txt-color);
+  margin-right: 7%;
+  width: 10em;
+  letter-spacing: 1.2px;
+}
+#undecided{
+  position: absolute;
+  top: 12%;
+  left: 4%;
+}
+#unlikely{
+  position: absolute;
+  top: 12%;
+  left: 19%;
+}
+#veryunlikely{
+  position: absolute;
+  top: 12%;
+  left: 36%;
+}
+#likely{
+  position: absolute;
+  top: 12%;
+  left: 58%;
+}
+#verylikely{
+  position: absolute;
+  top: 12%;
+  left: 82%;
+}
+hr{
+  width: 92%;
+  height: 1.25px;
+  background-color: #fff;
+  position: absolute;
+  top: 23.5em;
+  left: 2.5em;
+  border: none;
+}
+.hundred{
+  color: #fff;
+  letter-spacing: 1.2px;
+  position: absolute;
+  top: 62.5%;
+  left: 98.5%;
+  font-size: 180%;
+  font-weight: lighter;
+}
+#graph1-percentages{
+  display: flex;
+  justify-content: space-between;
+  color: var(--main-txt-color);
+  font-size: 110%;
+  width: 90%;
+}
+#graph1-percentages h2{
+  letter-spacing: 1.2px;
+}
+#ten{
+  margin-left: 5.5%;
+  margin-top: -20%;
+}
+#twelve{
+  margin-left: -24%;
+  margin-top: -20%;
+}
+#fourteen{
+  margin-left: -24%;
+  margin-top: -20%;
+}
+#thirtyone{
+  margin-left: -20%;
+  margin-top: -20%;
+}
+#thirtythree{
+  margin-left: -13%;
+  margin-top: -20%;
+}
+
+
+/* #graph1{
+  margin-top: 22%;
+  margin-left: -12%;
+}
+.subtitles{
+  display: flex;
+  justify-content: space-between;
+}
+.subtitles h2{
+  display: inline-block;
+  transform: rotate(-45deg);
+  color: var(--main-txt-color);
+  margin-right: 7%;
+  width: 10em;
+  text-align: right;
+}
+#undecided{
+  position: absolute;
+  top: 35.5%;
+  left: -5%;
+}
+#unlikely{
+  position: absolute;
+  top: 40%;
+  left: 18%;
+}
+#veryunlikely{
+  position: absolute;
+  top: 18%;
+  left: 48%;
+}
+#likely{
+  position: absolute;
+  top: 7%;
+  left: 65%;
+}
+#verylikely{
+  position: absolute;
+  top: -15%;
+  left: 94%;
+}
+#graph1-percentages{
+  display: flex;
+  justify-content: space-between;
+  color: var(--main-txt-color);
+  font-size: 110%;
+  width: 90%;
+}
+#ten{
+  margin-left: 8.5%;
+  margin-top: 0%;
+}
+#twelve{
+  margin-left: 21%;
+  margin-top: 0.5%;
+}
+#fourteen{
+  margin-left: 20%;
+  margin-top: 0%;
+}
+#thirtyone{
+  margin-left: 20%;
+  margin-top: 0%;
+}
+#thirtythree{
+  margin-left: 20%;
+  margin-top: 0%;
+} */
+
+/* -----GRAPH 2------ */
+#graph2{
+  position: absolute;
+  top: 27%;
+  left: 31%;
+  opacity: 0;
+}
+#Seperator{
+  transform: rotate(90deg);
+}
+.perc-upper{
+  position: absolute;
+  top: 10em;
+  left: -5.5em;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.perc-upper h2{
+  margin-left: 2em;
+  font-size: 20px;
+  font-weight: lighter;
+  color: var(--main-bg-color);
+}
+.top{
+  z-index: 0;
+  overflow-y: hidden;
+}
+.bottom{
+  z-index: 2;
+}
+/* -----GRAPH 3------ */
+#graph3{
+  opacity: 0;
+  position: absolute;
+  top: -65%;
+  left: -8%;
 }
