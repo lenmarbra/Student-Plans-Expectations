@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root{
+  --main-bg-color: #f2f2f2;
+  --main-txt-color: #ff4447;
+  --txt-color: #41949a;
+}
+body{
+  width: 100vp;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  font-family: '[Radio Grotesk]', Arial, Helvetica, sans-serif;
+  background-image: url(images/bgfilter.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: var(--main-bg-color);
+}
+
+/* ---------STATIC ITEMS---------- */
+h1{
+  color: var(--main-txt-color);
+  font-size: 50px;
+  font-weight: 200;
+  line-height: 1.1;
+}
+p{
+  color: var(--main-txt-color);
+  font-size: 14px;
+}
+#colophone{
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
+#colophone p{
+  font-size: 12px;
+}
+#title{
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  text-align: right;
+}
+#source{
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  display: flex;
+}
+#study-portal{
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  margin-top: 1%;
+}
+#source-txt{
+  position: absolute;
+  top: -1em;
+  left: 3.5%;
+}
+#paragraph{
+  position: absolute;
+  bottom: 1%;
+  right: 10%;
+  width: 17%;
+}
+
+/* --------QUESTION--------- */
+aside{
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+  color: var(--main-txt-color);
+  font-weight: 100;
+}
+button{
+  border-style: none;
+  background-color:#f2f2f2;
+  color: var(--main-txt-color);
+  text-align: left;
+  width: 100%;
+}
+.question{
+  display: flex;
+  flex-wrap: wrap;
+}
+button h2{
+  font-size: 470%;
+  font-weight: 400;
+  display: inline-block;
+  margin-right: 3%;
+  margin-top: 3%;
+  background-color: var(--main-bg-color);
+}
+h3{
+  display: inline-block;
+  font-size: 150%;
+  font-weight: 540;
+  width: 50%;
+  margin-top: 6.5%;
+}
