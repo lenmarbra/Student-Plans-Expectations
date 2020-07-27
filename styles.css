@@ -144,7 +144,8 @@ main{
   width: 10em;
   letter-spacing: 1.2px;
   font-family: 'Radio Grotesk', Arial, Helvetica, sans-serif;
-  font-size: 180%;
+  font-size: 185%;
+  font-weight: lighter;
 }
 #undecided{
   position: absolute;
@@ -184,7 +185,7 @@ hr{
   color: #fff;
   letter-spacing: 1.2px;
   position: absolute;
-  top: 63%;
+  top: 64%;
   left: 100%;
   font-size: 180%;
   font-weight: lighter;
@@ -309,14 +310,12 @@ hr{
   width: 60%;
 }
 .perc-upper h2{
-  margin-left: 1.85em;
+  margin-left: 2em;
   font-size: 20px;
   font-weight: lighter;
   color: var(--main-bg-color);
-  letter-spacing: 1.2px;
+  /* letter-spacing: 1px; */
 }
-
-
 .perc-lower{
   position: absolute;
   top: 13.5em;
