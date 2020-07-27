@@ -5,7 +5,8 @@
 :root{
   --main-bg-color: #f2f2f2;
   /* --main-txt-color: #ff4447; */
-  --main-txt-color: #da816b;
+  /* --main-txt-color: #da816b; */
+  --main-txt-color: #af614e;
   /* --main-txt-color: #e7a18f; */
   --txt-color: #41949a;
 }
@@ -85,7 +86,7 @@ aside{
 button{
   border-style: none;
   background-color:#f2f2f200;
-  color: var(--main-txt-color);
+  color: #df7a61a6;
   text-align: left;
   width: 100%;
 }
@@ -95,7 +96,7 @@ button:hover{
 button:focus {
   outline:0;
   border: none;
-  color: #c96a52;
+  color: #af614e;
   font-size: 100%;
 }
 button .active{
@@ -123,13 +124,13 @@ main{
   position: absolute;
   top: 3%;
   left: 14%;
-  width: 70%;
-  height: 60%;
+  width: 90%;
+  height: 90%;
 }
 /* -----GRAPH 1------- */
 #graph1{
-  margin-top: 10%;
-  margin-left: 0%;
+  margin-top: -7%;
+  margin-left: -20%;
 }
 .subtitles{
   display: flex;
@@ -143,47 +144,48 @@ main{
   width: 10em;
   letter-spacing: 1.2px;
   font-family: 'Radio Grotesk', Arial, Helvetica, sans-serif;
+  font-size: 180%;
 }
 #undecided{
   position: absolute;
-  top: 12%;
+  top: 15%;
   left: 4%;
 }
 #unlikely{
   position: absolute;
-  top: 12%;
+  top: 15%;
   left: 19%;
 }
 #veryunlikely{
   position: absolute;
-  top: 12%;
+  top: 15%;
   left: 36%;
 }
 #likely{
   position: absolute;
-  top: 12%;
+  top: 15%;
   left: 58%;
 }
 #verylikely{
   position: absolute;
-  top: 12%;
+  top: 15%;
   left: 82%;
 }
 hr{
   width: 92%;
-  height: 1.25px;
+  height: 1.5px;
   background-color: #fff;
   position: absolute;
-  top: 23.5em;
-  left: 2.5em;
+  top: 36em;
+  left: 3.8em;
   border: none;
 }
 .hundred{
   color: #fff;
   letter-spacing: 1.2px;
   position: absolute;
-  top: 62.5%;
-  left: 98.5%;
+  top: 63%;
+  left: 100%;
   font-size: 180%;
   font-weight: lighter;
 }
@@ -291,8 +293,8 @@ hr{
 /* -----GRAPH 2------ */
 #graph2{
   position: absolute;
-  top: 43%;
-  left: 29%;
+  top: 25%;
+  left: 24%;
   opacity: 0;
 }
 #Seperator{
@@ -313,10 +315,7 @@ hr{
   color: var(--main-bg-color);
   letter-spacing: 1.2px;
 }
-.top{
-  z-index: 0;
-  overflow-y: hidden;
-}
+
 
 .perc-lower{
   position: absolute;
@@ -374,61 +373,60 @@ hr{
 }
 .title-graphtwo{
   position: absolute;
-  top: 1em;
+  top: 8em;
 }
 .title-graphtwo h2{
   display: inline-block;
   transform: rotate(-45deg);
   color: var(--main-txt-color);
   /* margin: 7% 0%; */
-  width: 10em;
+  width: 15em;
   letter-spacing: 1.2px;
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Radio Grotesk', Arial, Helvetica, sans-serif;
-  width: 40em;
   font-weight: lighter;
 }
 .t-one{
   position: absolute;
   top: -11em; 
-  left: -8em;
+  left: -4.5em;
 }
 .t-two{
   position: absolute;
-  top: -12em; 
-  left: -2.5em;
+  top: -10.5em; 
+  left: 0em;
 }
 .t-three{
   position: absolute;
-  top: -12em; 
-  left: 2.5em;
+  top: -11em; 
+  left: 4em;
   width: 5em; 
   text-align: left;
 }
 .t-four{
   position: absolute;
   top: -11.5em; 
-  left: 7.5em;
+  left: 9em;
   width: 5em; 
   text-align: left;
 }
 .t-five{
   position: absolute;
   top: -12em; 
-  left: 13em;
+  left: 14em;
   width: 5em; 
   text-align: left;
 }
 .t-six{
   position: absolute;
   top: -12em; 
-  left: 18em;
+  left: 18.5em;
   width: 5em; 
   text-align: left;
 }
 .t-seven{
   position: absolute;
-  top: -12em; 
+  top: -11em; 
   left: 23em;
   width: 5em; 
   text-align: left;
@@ -439,23 +437,10 @@ hr{
 #graph3{
   opacity: 0;
   position: absolute;
-  top: -10%;
-  left: 10%;
+  top: 5em;
+  left: 25em;
 }
-#graphthree-lower{
-  position: absolute;
-  top: -5%;
-  left: 10%;
+#graph3 img{
+  width: 20em;
 }
-.circles
-{
-  position: absolute;
-  top: 1em;
-  left: 1em;
-  width: 7em;
-  height: 7em; 
-  border-radius: 50%;
-  border: 3px;
-  border-color: var(--main-bg-color);
-  background-color: none;
-}
+
