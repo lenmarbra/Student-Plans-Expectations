@@ -130,7 +130,7 @@ main{
 /* -----GRAPH 1------- */
 #graph1{
   margin-top: -7%;
-  margin-left: -20%;
+  margin-left: -19%;
 }
 .subtitles{
   display: flex;
@@ -437,8 +437,8 @@ hr{
 #graph3{
   opacity: 0;
   position: absolute;
-  top: 5em;
-  left: 25em;
+  top: 5.5em;
+  left: 24em;
 }
 #graph3 img{
   width: 20em;
